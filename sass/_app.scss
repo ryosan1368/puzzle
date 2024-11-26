@@ -35,7 +35,7 @@ body {
   background-color: var.$brown;
 }
 
-.main_clearfix::after {
+.clearfix::after {
   content: "";
   display: block;
   clear: both;
