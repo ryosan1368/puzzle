@@ -19,12 +19,14 @@ body {
 	width: 150px;
 	height: 250px;
 	background-color: var.$green;
+  float: left;
 }
 
 .main {
 	width: 250px;
 	height: 250px;
 	background-color: var.$red;
+  float: left;
 }
 
 .footer {
@@ -33,6 +35,8 @@ body {
 	background-color: var.$brown;
 }
 
-.main_clearfix {
-  display: flex;
+.main_clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
