@@ -1,0 +1,13 @@
+@use 'variable' as var;
+
+@mixin makeBox($boxHeight, $boxWidth) {
+  @each $box in var.$classNames {
+    $index_key: index(var.$classNames, $box);
+
+    &.#{$box} {
+      height: $boxHeight;
+      width: $boxWidth;
+      background-color: nth(var.$buttonColor, $index_key);
+    }
+  }
+}
